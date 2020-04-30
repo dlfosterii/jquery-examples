@@ -13,6 +13,16 @@
     */
     $(function() {
       // Write code here
+      const $iframe = $('#iframe');
+      const $links = $('a');
+
+      $links.click(function(e) {
+        e.preventDefault();
+        $iframe.attr('src', $(this).attr('href'));
+      });
+
+      
+
     });
     </script>
   </head>
